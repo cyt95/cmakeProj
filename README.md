@@ -15,10 +15,15 @@ pw dev1
 sudo apt install -y openssh-server build-essential gdb rsync make zip
 
 sudo apt-get update -y
+
 sudo apt-get upgrade -y
+
 sudo apt-get install build-essential gdb gdbserver -y
+
 sudo apt-get remove openssh-server -y
+
 sudo apt-get install openssh-server -y 
 
 sudo nano /etc/ssh/sshd_config
+
 -> PasswordAuthentication 을 no -> yes 로 변경
